@@ -1,0 +1,144 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> {{title}} </title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="icon" href="{% static 'images/icon12.png' %}">
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="{% url 'home' %}"><img src="{% static 'images/bonikLogo.png' %}" width="125px"></a>
+            </div>
+            <div class="wrap">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                   <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                  </button>
+                </div>
+             </div>
+            <div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'category-list' %}">Categories</a></li>
+                        <li><a href="{% url 'product-list' %}">Products</a></li>
+                        <li><a href="{% url 'brand-list' %}">Brands</a></li>
+                        <li><a href="#foot">About</a></li>
+
+                        <li><a href="#"><i class='fas fa-user-circle' style='font-size:20px'></i></a></li>
+                        <li><a href="#"><i class='fas fa-shopping-cart' style='font-size:20px'></i></a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- <div>
+                <nav>
+                    <ul id='MenuItems'>
+                        <li><a href="#"><i class='fas fa-user-circle' style='font-size:24px'></i></a></li>
+                        </li><a href=""><i class='fas fa-shopping-cart' style='font-size:24px'></i></a></li>
+                    </ul>
+                </nav>
+            </div> -->
+            <div class="icon">
+                <a href="#" onclick="menutoggle()">
+                    <i class="fa fa-bars" style='font-size:20px'></i>
+                </a>
+                <!-- <img src=" images/images/menu.png " class="menu-icon" onclick="menutoggle()">
+                <i class="fas fa-bars" onclick="menutoggle()" > -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+    {% block content %}
+    <!-- inherited to template.html -->
+    {% endblock %}
+
+    <!-- footer  -->
+    <div class="footer" id='foot'>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3> <a href="https://play.google.com/store/apps" target="_blank"
+                            rel="noopener noreferrer">Download</a> Our App</h3>
+                    <p>Download the 'bonik' app for Androids.</p>
+                    <div class="app-logo">
+                        <img src="{% static 'images/images/play-store.png' %}">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="{% static 'images/bonikLogo.png' %}">
+                    <p>Our Purpose Is To Sustainbly Make the Pleasure and<br>Benefits of SUSTian enterprenaures and the
+                        customers</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><i class="fab fa-facebook-square"></i><a href="https://facebook.com/" target="_blank"
+                                rel="noopener noreferrer"> Facebook</a></li>
+                        <li><i class="fab fa-twitter-square"></i><a href="http://twitter.com" target="_blank"
+                                rel="noopener noreferrer"> Twitter</a> </li>
+                        <li><i class="fab fa-instagram-square"></i><a href="http://instagram.com" target="_blank"
+                                rel="noopener noreferrer"> Instagram</a> </li>
+                        <li><i class="fab fa-youtube-square"></i><a href="http://youtube.com" target="_blank"
+                                rel="noopener noreferrer"> Youtube</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2021 - CSE_334</p>
+        </div>
+    </div>
+    <!-- --------- js for toggle menu ----------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

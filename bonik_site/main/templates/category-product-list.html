@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- featured Products -->
+
+
+<div class="product">
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            {% if data %}
+            {% for pro in data %}
+            <div class="col4">
+                <a href="/product/{{pro.slug}}/{{product.id}}"><img src="/media/{{pro.image}}" alt={{pro.title}}></a>
+                <figcaption class='col4-body'>
+                    <h4 class='col4-text'> <strong> <a href="/product/{{pro.slug}}/{{product.id}}">{{pro.title}}</a></strong></h4>
+                    <div class="col4-footer">
+                        <button class = 'btn btn-sm btn-primary'><i class='fa fa-shopping-cart'></i> </button>
+                        <button class = 'btn btn-sm btn-danger'><i class='fa fa-heart'></i> </button>
+                        <span class='float-right'>
+                            4.5/5
+                            <i class='fa fat-star text-warning'></i>
+                        </span>
+                    </div>
+                </figcaption>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div>
+    <p class='all-products-btn'><a href="{% url 'product-list' %}" class='btn btn-dark btn-sm'>All Products <i
+                class='fa fa-long-arrow-alt-right'></i></a></p>
+</div>
+
+{% endblock %}

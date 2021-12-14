@@ -1,0 +1,361 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+ <!-- banner  -->
+    <div class="banner">
+        <div class="row">
+            <div class="col-2">
+                <h1>Welcome to<br>Bonik!</h1>
+                <p>
+                    Bonik is a common platform for the sustian enterprenaurs. You can buy any t-shirt, hoodie, jacket,
+                    or any other handicrafs from Bonik.
+                    And exclusively if you want to buy any product of SUSTian Exclusive Product then Bonik is the
+                    platform
+                    you are looking for.
+                </p>
+                <a href="#catagories" class="btn">Explore Bonik &#8594</a>
+            </div>
+            <div class="col-2">
+                <img src="{% static 'images/Chetona71.png' %}">
+            </div>
+        </div>
+    </div>
+            
+    <!-- -----features Categories -->
+    <div id='catagories' class="categories">
+        <div class="small-container">
+            <h2 class="title">Catagories</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="{% static 'images/cat_imgs/sylhethudi.jpg' %}" width=30 height=240>
+                    <figcaption class="col-3-body">
+                        <h4><strong>Hoodies</strong></h4>
+                    </figcaption>
+                </div>                                                      
+                <div class="col-3">
+                    <img src="{% static 'images/cat_imgs/tshirt.jpeg' %}">
+                    <figcaption class="col-3-body">
+                        <h4><strong>T-Shirts</strong></h4>
+                    </figcaption>
+                </div>
+                <div class="col-3">
+                    <img src="{% static 'images/cat_imgs/Lockets/handCrafts.png' %}" width=100 height=230>
+                    <figcaption class="col-3-body">
+                        <h4><strong>HandiCrafts</strong></h4>
+                    </figcaption>
+                </div>
+                <div class="col-3">
+                    <img src="{% static 'images/brand_imgs/rosmonjuri/ghee.png' %}" width=100 height=230>
+                    <figcaption class="col-3-body">
+                        <h4><strong>Foods</strong></h4>
+                    </figcaption>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- featured Products -->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col4">
+                <img src="{% static 'images/cat_imgs/Lockets/locket_Che.png' %}" width=200 height=180>
+                <h4>Locket:Che</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 150tk</p>
+            </div>
+            <div class="col4">
+                <img src="{% static 'images/brand_imgs/tinspirations/ganesha-locket.png' %}">
+                <h4>Locket:Gonesh</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 200tk</p>
+            </div>
+            <div class="col4">
+                <img src="{% static 'images/brand_imgs/drighangchu/hudi_drighanchu.png' %}" height=180>
+                <h4>Shabiprobi Exclusive Hoodie</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 650tk</p>
+            </div>
+            <div class="col4">
+                <img src="{% static 'images/brand_imgs/rosmonjuri/modhu-sorisha.png' %}" height=180>
+                <h4>Modhu-Sorisha</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 200tk</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col4">
+                <img src="{% static 'images/brand_imgs/rosmonjuri/modhu_sundorbon.png' %}" width=200 height=180>
+                <h4>Modhu-Sundorbon</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 550tk</p>
+            </div>
+            <div class="col4">
+                <img src="{% static 'images/brand_imgs/rosmonjuri/khejur.png' %}">
+                <h4>Fresh Deshi Khejur</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 250tk</p>
+            </div>
+            <div class="col4">
+                <img src="{% static 'images/brand_imgs/rosmonjuri/cha-pata.png' %}" height=180>
+                <h4>Local Sylheti Cha Pata</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 500tk</p>
+            </div>
+            <div class="col4">
+                <img src="{% static 'images/cat_imgs/sustcseTshirts.png' %}" height=180>
+                <h4>SUST CSE T shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 250tk</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col4">
+                <img src="{% static 'images/brand_imgs/drighangchu/hudi_drighanchu.png' %}" width=200 height=180>
+                <h4>Shabiprobi Exclusive Hoodie</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 600tk</p>
+            </div>
+            <div class="col4">
+                <img src="{% static 'images/cat_imgs/tshirt.jpeg' %}">
+                <h4>Black SUST T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 250tk</p>
+            </div>
+            <div class="col4">
+                <img src="{% static 'images/cat_imgs/robosusthudi.jpeg' %}" height=180>
+                <h4>Black Robo-SUST Hoodie</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 500tk</p>
+            </div>
+            <div class="col4">
+                <img src="{% static 'images/cat_imgs/sustcseTshirts.png' %}" height=180>
+                <h4>SUST CSE T shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>price: 200tk</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Sustian Organisations -->
+    <div class="Exclusive-Product">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="{% static 'images/org_imgs/robosust/jamesTelescope.png' %}" class="exclusive-products">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Availabe </p>
+                    <h1>"CAM-SUST James Web Telescope T-Shirt" </h1>
+                    <small>
+                        “The James Webb Space Telescope was specifically designed to see the first stars and galaxies
+                        that were formed in the universe.”
+                        - John M. Grunsfeld
+                    </small>
+                    <a href="" class="btn">Buy Now &#8594</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- testimonial -->
+
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>The SUST T-Shirt is so comfortable. Thanks to Bonik platform , the service was good enough for me.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="{% static 'images/abhishekDey.jpg' %}">
+                    <h3>Abhishek Dey</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>As an enterprenaur I find 'bonik' very helpful to reach my products to the customers. I hope bonik will be developed more efficiently.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="{% static 'images/bishal.jpg' %}">
+                    <h3>Ashikur Rahman Bishal</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Bonik is still in the initial stage. Day by day I hope they will grow more and provide better service.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="{% static 'images/kiriti.jpg' %}">
+                    <h3>Kiriti Mukhopadhdhay</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- Organizations -->
+
+    <div class="brands">
+        <div class="small-container">
+            <h2 class="title">Organizations of SUST</h2>
+            <div class="row">  
+                <div class="col-5">
+                   <a href="https://cam-sust.org/">
+                    <img src="{% static 'images/org_imgs/CAMSust.png' %}">
+                   </a> 
+                </div>
+                <div class="col-5">
+                    <a href="https://www.facebook.com/CFSUST/">
+                        <img src="{% static 'images/org_imgs/cartoonFactory.jpg' %}">
+                    </a>
+                </div>
+                <div class="col-5">
+                    <a href="http://www.shikorh.org/#/">
+                        <img src="{% static 'images/org_imgs/shikorh.jpg' %}">
+                    </a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.supasust.org/">
+                        <img src="{% static 'images/org_imgs/supa.png' %}">
+                    </a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.facebook.com/robosustofficial/">
+                        <img src="{% static 'images/org_imgs/roboSUST.jpg' %}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- brands -->
+<div class="brands">
+    <div class="small-container">
+        <h2 class="title">Brands</h2>
+        <div class="row">  
+            <div class="col-5">
+                <a href="https://www.facebook.com/rosmonjuri/">
+                    <img src="{% static 'images/brand_imgs/rosmonjuri.jpg' %}">
+                </a>
+            </div>
+            <div class="col-5">
+                <a href="https://www.facebook.com/shoileyo.clothing/">
+                    <img src="{% static 'images/brand_imgs/shoileyo.jpg' %}">
+                </a>
+            </div>
+            <div class="col-5">
+                <a href="https://www.facebook.com/Drrighangchu/">
+                    <img src="{% static 'images/brand_imgs/drighangchuLogo.jpg' %}">
+                </a>
+            </div>
+            <div class="col-5">
+                <a href="https://tinspirationbd.com/">
+                    <img src="{% static 'images/brand_imgs/tinspirations/logo.jpg' %}">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

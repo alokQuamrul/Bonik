@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}          
+<!-- -----features Categories -->
+    <div id='catagories' class="categories">
+        <div class="small-container">
+            <h2 class="title">Catagories</h2>
+            <div class="row">
+                {% if data %}
+                    {% for cat in data %}
+                        <div class="col-3">
+                            <a href="/category-product-list/{{cat.id}}"><img src="/media/{{cat.image}}" alt="{{cat.title}}" width=30 height=240></a>
+                            <figcaption class="col-3-body">
+                                <h4 class = "col-3-text"><strong><a href="#">{{cat.title}}</a></strong></h4>
+                            </figcaption>
+                        </div>
+                        <!-- <div class="col-2-body">
+                            <h6 class = "col-3-text"><a href="#">{{cat.title}}</a></h6>
+                        </div>                                                       -->
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- Organizations -->
+
+    <div class="brands">
+        <div class="small-container">
+            <h2 class="title">Organizations of SUST</h2>
+            <div class="row">  
+                <div class="col-5">
+                    <img src="{% static 'images/org_imgs/CAMSust.png' %}">
+                </div>
+                <div class="col-5">
+                    <img src="{% static 'images/org_imgs/cartoonFactory.jpg' %}">
+                </div>
+                <div class="col-5">
+                    <img src="{% static 'images/org_imgs/shikorh.jpg' %}">
+                </div>
+                <div class="col-5">
+                    <img src="{% static 'images/org_imgs/sustSD.jpg' %}">
+                </div>
+                <div class="col-5">
+                    <img src="{% static 'images/org_imgs/roboSUST.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

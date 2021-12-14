@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<!-- brands -->
+<div class="brands">
+    <div class="small-container">
+        <h2 class="title">Brands</h2>
+        <div class="row">
+            {% if data %}
+            {% for brnd in data %}
+            <div class="col-5">
+                <a href="#"><img src="/media/{{brnd.image}}" alt="{{brnd.title}}"></a>
+                <figcaption class="col-5-body">
+                    <h4 class="col-5-text"><strong><a href="#">{{brnd.title}}</a></strong></h4>
+                </figcaption>
+            </div>
+            {% endfor %}
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+<!-- </div>
+</div> -->
+
+
+
+
+
+{% endblock %}
