@@ -1,7 +1,7 @@
 
 # "Bonik", an ecommerce website to bring all SUSTian entrepreneurs in a common platform
 
-For new entrepreneurs, one of the biggest challenges is to reach a customer base who will rely on them.
+Motivation: For new entrepreneurs, one of the biggest challenges is to reach a customer base who will rely on them.
 During covid a good number of sustian entrepreneurs showed up. And obviously a sustian customer rely on a sustian
 entrepreneur the most. 
 
@@ -12,102 +12,63 @@ Using this project SUSTian entrepreneur and organizations can sign up and admin 
 Users (customers) can visit this site as a guest or they can sign up. They will be able to find their desired product using search bar, add them to wishlist or cart then checkout!
 Users can post blog too.
 
-## Authors
+## Developed By:
 
-- [@katherinepeterson](https://www.github.com/octokatherine)
+- Umme Habiba (2017331055),  and Md Kamrul Islam (2017331081) [@alokQuamrul](https://github.com/alokQuamrul)
 
 
-## Screenshots
+## Screenshots and features
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+[@Bonik Home Starting](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-50-59.png)
+[@Explore Bonik](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-51-17.png)
+[@Home:Categories](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-51-37.png)
+[@Home:Featured Products](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-51-37.png)
+[@Home:Featured Products 2](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-52-42.png)
+[@Home:Latest Products](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-52-54.png)
+[@Home: Exclusive Products](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-53-09.png)
+[@Home:User Reviews](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-53-21.png)
+[@Home:Organizations of SUST](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-53-35.png)
+[@Home:Brands](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-53-54.png)
+[@footer](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-54-06.png)
+[@categories page](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-54-29.png)
+[@Featured Product Page](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-55-09.png)
+[@Brand Page](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-55-25.png)
+[@Responsiveness of the site](https://github.com/alokQuamrul/Bonik/blob/master/Bonik_ScreenShots/Screenshot%20from%202021-12-14%2011-58-28.png)
+
 
 
 ## Demo
+[@Github link](https://github.com/alokQuamrul/Bonik)
+[@Demonstrating Video](https://drive.google.com/file/d/1RMXlTrT_3WT7omjEM4xLkCTUSlouOy3S/view?usp=sharing)
+[@Screenshots](https://github.com/alokQuamrul/Bonik/tree/master/Bonik_ScreenShots)
 
-Insert gif or link to demo
 
-## Tech Stack
+## Dev Tools
 
-**Client:** CSS, JavaScript
-
+**Client:** HTML, CSS, JavaScript
 **Server:** Django, SQLite
+**others** Ajax
 
-## Environment Variables
+## What you need to run the project:
 
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
-
-
-## Running Tests
-
-To run tests, run the following command
-
-```bash
-  npm run test
-```
+* setup python
+* install latest pip
+* setup a virtual environment
+* install django 3.2
+* install Pillow package
+* go to the app 'bonik_site'
+* put in the terminal 'python manage.py runserver'
+* visit the page opened in your browser
 
 
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://link-to-project
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Color | ![#78a17e](https://via.placeholder.com/10/78a17e?text=+) #78a17e |
-| Color | ![#173820](https://via.placeholder.com/10/173820?text=+) #173820 |
-| Color | ![#266b41](https://via.placeholder.com/10/266b41?text=+) #266b41 |
-| Color | ![#555](https://via.placeholder.com/10/555?text=+) #555 |#555    |
-| Color | ![#777](https://via.placeholder.com/10/777?text=+) #777 |#777    |
-| Color | ![#122918](https://via.placeholder.com/10/122918?text=+) #122918 |
-| Color | ![#8a8a8a](https://via.placeholder.com/10/8a8a8a?text=+) #8a8a8a |
 
 
 ## Lessons Learned
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+I believe an e-commerce site is good thing to learn web development because there are numerous features and you can learn a lot. I have learnt dbms and design patter and speciall django backend with ajax. That's new to me. 
 
 
-## Used By
 
-This project is used by the following companies:
-
-- Company 1
-- Company 2
-
-
-## Appendix
-
-SUST:
-Shahjalal University Of Scinece & Technology
-
-SUSTian: Students of SUST
 
 
 
