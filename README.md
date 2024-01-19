@@ -14,7 +14,7 @@ Users can post blog too.
 
 ## Developed By:
 
-- Umme Habiba (2017331055),  and Md Kamrul Islam (2017331081) [@alokQuamrul](https://github.com/alokQuamrul)
+- Md Kamrul Islam (2017331081) [@alokQuamrul](https://github.com/alokQuamrul and Umme Habiba (2017331055).
 
 
 ## Screenshots and features
